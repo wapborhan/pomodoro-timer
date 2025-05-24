@@ -1,0 +1,119 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.progressBar {
+  width: 15rem;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.leftTime {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.sessionCount {
+  color: #424242;
+}
+
+.activity {
+  color: #424242;
+  margin-top: 1rem;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.startButton,
+.pauseButton,
+.stopButton {
+  cursor: pointer;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  border: none;
+}
+
+.startButton,
+.pauseButton {
+  width: 4rem;
+}
+
+.startButton {
+  background: linear-gradient(to right, #35db7b, #1ebc61);
+}
+
+.startButton:hover {
+  background: linear-gradient(to right, #25cb6b, #0eac51);
+}
+
+.pauseButton {
+  background: linear-gradient(to right, #ed6f74, #ff5c61);
+}
+
+.pauseButton:hover {
+  background: linear-gradient(to right, #dd5f64, #ef4c51);
+}
+
+.stopButton {
+  width: 3rem;
+  font-size: 1.3rem;
+  background: linear-gradient(to right, #f9a552, #f88b2e);
+}
+
+.stopButton:hover {
+  background: linear-gradient(to right, #e99542, #e87b1e);
+}
+
+.stopButton:disabled,
+.stopButton:disabled:hover {
+  cursor: not-allowed;
+  background: linear-gradient(to right, #d3d3d3, #b3b3b3);
+}
+.leftTime {
+  display: flex;
+  gap: 0.1em;
+  justify-content: center;
+}
+.tabs {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+  justify-content: center;
+}
+
+.tabButton {
+  padding: 0.5rem 1.25rem;
+  border: none;
+  background: #eee;
+  border-radius: 9999px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.tabButton:hover {
+  background: #ddd;
+}
+
+.active {
+  background: #333;
+  color: #fff;
+}

@@ -1,0 +1,25 @@
+.flip-animate {
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #333;
+  transform-origin: 0 0;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.flip-animate::before {
+  content: attr(data-flip);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 100%;
+  text-align: center;
+  transform: rotateX(-90deg);
+  transform-origin: 50% 0;
+}
+
+.flip-animate.do-flip {
+  transition: transform 0.3s;
+  transform: rotateX(90deg) translateY(-0.5em);
+}
